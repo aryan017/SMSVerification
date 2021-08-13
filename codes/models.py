@@ -5,7 +5,7 @@ import random
 # Create your models here.
 
 class Code(models.Model):
-    number=models.CharField(max_length=5,blank=True)
+    number=models.CharField(max_length=5,blank=True)  # random number code for verification
     user=models.OneToOneField(CustomUser, on_delete=models.CASCADE)
 
 
